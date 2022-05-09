@@ -2,7 +2,7 @@ name: deploy react to github page
 on:
     pull_request:
         branches:
-            - master
+            - main
         types: [closed]
 jobs:
     build:
