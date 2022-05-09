@@ -1,13 +1,12 @@
 name: deploy react to github page
 on:
-    push:
-        branches:
-            - master
     pull_request:
         branches:
             - master
+        types: [closed]
 jobs:
     build:
+        if: github.event.pull_request.merged == true
         name: Build and deploy gh-pages
         env:
             MY_SECRET: ${{secrets.commit_secret}}
