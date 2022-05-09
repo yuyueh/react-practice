@@ -1,4 +1,4 @@
-name: deploy map to github page
+name: deploy react to github page
 on:
     push:
         branches:
