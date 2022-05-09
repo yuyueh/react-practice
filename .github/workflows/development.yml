@@ -25,8 +25,8 @@ jobs:
               run: |
                   yarn
             - name: build
-              with:
-                  cmd: build
+              run: |
+                  yarn build -- --base-href "/$REPO_NAME/"
             - name: Commit files
               run: |
                   cd $PUBLISH_DIR
