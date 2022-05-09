@@ -26,5 +26,5 @@
     },
     "editor.formatOnSave": true,
     "editor.snippetSuggestions": "top",
-    "cSpell.words": ["craco"]
+    "cSpell.words": ["craco", "tailwindcss"]
 }
